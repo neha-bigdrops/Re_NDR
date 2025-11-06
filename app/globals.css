@@ -203,6 +203,63 @@
   display: flex;
 }
 
+/* Tablet only - shadow fixes (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .review-swiper {
+    overflow: hidden !important;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .review-swiper .swiper-wrapper {
+    padding: 5px 0;
+    overflow: visible !important;
+  }
+
+  .review-swiper .swiper-slide {
+    padding: 0 4px;
+  }
+
+  .review-swiper .swiper-slide > div {
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15) !important;
+    margin: 0 4px;
+    width: calc(100% - 8px);
+  }
+}
+
+/* Desktop only - shadow fixes (1024px and above) */
+@media (min-width: 1024px) {
+  .review-container {
+    overflow: visible !important;
+  }
+
+  /* Target the desktop swiper container parent */
+  .review-container > div:last-child {
+    overflow: visible !important;
+  }
+
+  .review-container > div:last-child > div {
+    overflow: visible !important;
+  }
+
+  .review-swiper {
+    overflow: visible !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .review-swiper .swiper-wrapper {
+    padding: 5px 10px;
+    overflow: visible !important;
+  }
+
+  .review-swiper .swiper-slide > div {
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2) !important;
+    margin: 0 6px;
+    width: calc(100% - 12px);
+  }
+}
+
 .review-swiper .swiper-button-disabled {
   opacity: 0.5;
   cursor: not-allowed;

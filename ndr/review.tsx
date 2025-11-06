@@ -202,8 +202,7 @@ export default function Review() {
                             w-full h-full
                           "
                           style={{
-                            boxShadow:
-                              '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'
+                            boxShadow: '4px 4px 12px 0px rgba(0, 0, 0, 0.15)'
                           }}
                         >
                           {/* Stars */}
